@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1> {{ question.question }}</h1>
+<p> {{ survey.instructions }}</p>
+    
+
+    <h4> Please Select which type of survey you'd like to take!</h4>
+    <br>
+    <form action="/begin" method="POST">
+        <button>Satisfaction Survey</button>
+    </form>
+    <p> OR THE </p>
+    <form action="/personality">
+        <button>Personality Survey</button>
+    </form>
+{% endblock %}
